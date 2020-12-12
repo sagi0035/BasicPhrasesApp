@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         Log.i("Button Pressed",button.getTag().toString());
 
         // now we get the file that we wish to place in the circumstance
-        // now this is going to be based on a tag which we will want to put inside of a v#ariable
+        // now this is going to be based on a tag which we will want to put inside of a variable
+        // and depending on the tag picked we play its corresponding audio file
         MediaPlayer mPlayer = MediaPlayer.create(this, getResources().getIdentifier(button.getTag().toString(), "raw", getPackageName()));
         mPlayer.start();
 
